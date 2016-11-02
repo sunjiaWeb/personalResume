@@ -1,0 +1,117 @@
+@import "bootstrap.less";
+@width:80px;
+@media (min-width: @screen-lg-min) {
+  .tabs-name{
+    height:580px;
+  }
+
+  .panel{
+    margin-left:20px;
+    margin-right:20px;
+    height:580px;
+  }
+
+  .container{
+    margin-top:10%;
+  }
+}
+
+@media (max-width: @screen-xs-min){
+  .ul-tabs-list{
+    display:none;
+  }
+}
+
+@media (max-width: @screen-md-min){
+  .social{
+    display:none;
+  }
+
+  .panel-group{
+    margin-top:30px;
+  }
+}
+
+.ul-tabs-list{
+  width:80px;
+  text-align:center;
+}
+
+.ul-tabs-list>li{
+  width:100%;
+  height:0;
+  padding-bottom:100%;
+  margin-bottom:2px;
+  border:2px solid #fff;
+}
+
+.ul-tabs-list>li:hover{
+  background:#fff;
+}
+
+.ul-tabs-list>li:hover i{
+  background:@brand-primary;
+}
+
+.ul-tabs-list>li>i{
+  display:inline-block;
+  width:4em;
+  height:4em;
+  margin-top:0.8em;
+  background:#fff;
+}
+
+.ul-tabs-list>li:hover a{
+  color:#fff;
+}
+
+.ul-tabs-list a{
+  font-size:30px;
+  line-height:1.75em;
+  color:@brand-primary;
+}
+
+.circle-tabs{
+  display:inline-block;
+  width:2em;
+  height:2em;
+  background:#fff;
+  text-align:center;
+}
+
+.circle-tabs>a{
+  font-size:18px;
+  line-height:1.5em;
+  color:@brand-primary;
+}
+
+/************************滚动条*********************************/
+
+#scroll-1 {
+  overflow-y:scroll;
+  margin-right:10px;
+}
+
+#scroll-1::-webkit-scrollbar {//滚动条整体部分
+  width:20px;
+  height:10px;
+}
+#scroll-1::-webkit-scrollbar-button    {//滚动条两端的按钮
+  background-color:#3B5998;
+}
+#scroll-1::-webkit-scrollbar-track     {//外层轨道
+  background:#3B5998;
+}
+#scroll-1::-webkit-scrollbar-track-piece {//内层轨道
+  background:#DCDCDC;
+}
+#scroll-1::-webkit-scrollbar-thumb{//滚动条里面可以拖动的那部分
+  background:#3B5998;
+  /*border-radius:4px;*/
+}
+#scroll-1::-webkit-scrollbar-corner {//边角
+  background:#3B5998;
+}
+#scroll-1::-webkit-scrollbar-resizer  {//定义右下角拖动块的样式
+  background:#3B5998;
+}
